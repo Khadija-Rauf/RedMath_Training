@@ -45,10 +45,9 @@ public class NewsService {
 
         if (optionalNews.isPresent()) {
             News existingNews = optionalNews.get();
-            // Update the existingNews object with the data from updatedNews
             existingNews.setTitle(updatedNews.getTitle());
             existingNews.setDetails(updatedNews.getDetails());
-
+            existingNews.setTags(updatedNews.getTags());
             return repository.save(existingNews);
         } else {
             return null;
