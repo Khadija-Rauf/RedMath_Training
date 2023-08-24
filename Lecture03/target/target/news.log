@@ -1,0 +1,373 @@
+2023-08-24T09:19:40.866+05:00  INFO $ {HOSTNAME} 7156 --- [main] com.redmath.training.Application         : Starting Application v0.0.1-SNAPSHOT using Java 20.0.2 with PID 7156 (C:\IntelliJ IDEA Community Edition 2022.1.3\workspace\Lecture03\target\News-0.0.1-SNAPSHOT.jar started by khadija.rauf in C:\IntelliJ IDEA Community Edition 2022.1.3\workspace\Lecture03\target)
+2023-08-24T09:19:40.867+05:00 DEBUG $ {HOSTNAME} 7156 --- [main] com.redmath.training.Application         : Running with Spring Boot v3.1.2, Spring v6.0.11
+2023-08-24T09:19:40.869+05:00  INFO $ {HOSTNAME} 7156 --- [main] com.redmath.training.Application         : No active profile set, falling back to 1 default profile: "default"
+2023-08-24T09:19:42.383+05:00  INFO $ {HOSTNAME} 7156 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-24T09:19:42.470+05:00  INFO $ {HOSTNAME} 7156 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71 ms. Found 1 JPA repository interfaces.
+2023-08-24T09:19:43.453+05:00  INFO $ {HOSTNAME} 7156 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-08-24T09:19:43.478+05:00  INFO $ {HOSTNAME} 7156 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-24T09:19:43.478+05:00  INFO $ {HOSTNAME} 7156 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-24T09:19:43.612+05:00  INFO $ {HOSTNAME} 7156 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-24T09:19:43.612+05:00  INFO $ {HOSTNAME} 7156 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2657 ms
+2023-08-24T09:19:43.660+05:00  INFO $ {HOSTNAME} 7156 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-08-24T09:19:44.036+05:00  INFO $ {HOSTNAME} 7156 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:9f0453d0-20e4-4a19-966f-290e05fe766b user=SA
+2023-08-24T09:19:44.038+05:00  INFO $ {HOSTNAME} 7156 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-08-24T09:19:44.048+05:00  INFO $ {HOSTNAME} 7156 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:9f0453d0-20e4-4a19-966f-290e05fe766b'
+2023-08-24T09:19:44.435+05:00  INFO $ {HOSTNAME} 7156 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-08-24T09:19:44.912+05:00  INFO $ {HOSTNAME} 7156 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-24T09:19:44.917+05:00  INFO $ {HOSTNAME} 7156 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-24T09:19:44.922+05:00  INFO $ {HOSTNAME} 7156 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-24T09:19:44.926+05:00  INFO $ {HOSTNAME} 7156 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-24T09:19:44.931+05:00  INFO $ {HOSTNAME} 7156 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-24T09:19:44.931+05:00  INFO $ {HOSTNAME} 7156 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-08-24T09:19:44.956+05:00  INFO $ {HOSTNAME} 7156 --- [main] liquibase.changelog                      : Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2023-08-24T09:19:44.960+05:00  INFO $ {HOSTNAME} 7156 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-24T09:19:44.962+05:00  INFO $ {HOSTNAME} 7156 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-08-24T09:19:44.965+05:00  INFO $ {HOSTNAME} 7156 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-24T09:19:44.966+05:00  INFO $ {HOSTNAME} 7156 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-24T09:19:45.025+05:00  INFO $ {HOSTNAME} 7156 --- [main] liquibase.changelog                      : Table news created
+2023-08-24T09:19:45.027+05:00  INFO $ {HOSTNAME} 7156 --- [main] liquibase.changelog                      : Primary key added to news (id)
+2023-08-24T09:19:45.028+05:00  INFO $ {HOSTNAME} 7156 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-schema-0.0.1.yaml::schema-0.0.1::news team ran successfully in 5ms
+2023-08-24T09:19:45.032+05:00  INFO $ {HOSTNAME} 7156 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-24T09:19:45.034+05:00  INFO $ {HOSTNAME} 7156 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-24T09:19:45.037+05:00  INFO $ {HOSTNAME} 7156 --- [main] liquibase.changelog                      : New row inserted into news
+2023-08-24T09:19:45.038+05:00  INFO $ {HOSTNAME} 7156 --- [main] liquibase.changelog                      : New row inserted into news
+2023-08-24T09:19:45.039+05:00  INFO $ {HOSTNAME} 7156 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-data-0.0.1.yaml::data-0.0.1::news team ran successfully in 4ms
+2023-08-24T09:19:45.041+05:00  INFO $ {HOSTNAME} 7156 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-24T09:19:45.043+05:00  INFO $ {HOSTNAME} 7156 --- [main] liquibase                                : Update command completed successfully.
+2023-08-24T09:19:45.045+05:00  INFO $ {HOSTNAME} 7156 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-24T09:19:45.047+05:00  INFO $ {HOSTNAME} 7156 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-08-24T09:19:45.290+05:00  INFO $ {HOSTNAME} 7156 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-24T09:19:45.530+05:00  INFO $ {HOSTNAME} 7156 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-24T09:19:45.533+05:00  INFO $ {HOSTNAME} 7156 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-08-24T09:19:45.792+05:00  INFO $ {HOSTNAME} 7156 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-24T09:19:46.037+05:00  INFO $ {HOSTNAME} 7156 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-24T09:19:46.309+05:00  INFO $ {HOSTNAME} 7156 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-24T09:19:47.075+05:00  INFO $ {HOSTNAME} 7156 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-24T09:19:47.078+05:00  INFO $ {HOSTNAME} 7156 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-24T09:19:47.476+05:00  WARN $ {HOSTNAME} 7156 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-24T09:19:47.660+05:00  INFO $ {HOSTNAME} 7156 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-08-24T09:19:47.889+05:00  INFO $ {HOSTNAME} 7156 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-24T09:19:47.941+05:00  INFO $ {HOSTNAME} 7156 --- [main] com.redmath.training.Application         : Started Application in 8.133 seconds (process running for 9.673)
+2023-08-24T09:19:56.169+05:00  INFO $ {HOSTNAME} 7156 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-24T09:19:56.170+05:00  INFO $ {HOSTNAME} 7156 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-08-24T09:19:56.171+05:00  INFO $ {HOSTNAME} 7156 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-08-24T09:19:56.216+05:00 DEBUG $ {HOSTNAME} 7156 --- [http-nio-8080-exec-1] com.redmath.training.core.NewsService    : findAll
+2023-08-24T09:19:56.362+05:00 DEBUG $ {HOSTNAME} 7156 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select n1_0.id,n1_0.details,n1_0.reported_at,n1_0.tags,n1_0.title from news n1_0
+2023-08-24T09:21:38.286+05:00  INFO $ {HOSTNAME} 7156 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-24T09:21:38.290+05:00  INFO $ {HOSTNAME} 7156 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-08-24T09:21:38.297+05:00  INFO $ {HOSTNAME} 7156 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-08-24T09:21:40.944+05:00  INFO $ {HOSTNAME} 14100 --- [main] com.redmath.training.Application         : Starting Application v0.0.1-SNAPSHOT using Java 20.0.2 with PID 14100 (C:\IntelliJ IDEA Community Edition 2022.1.3\workspace\Lecture03\target\News-0.0.1-SNAPSHOT.jar started by khadija.rauf in C:\IntelliJ IDEA Community Edition 2022.1.3\workspace\Lecture03\target)
+2023-08-24T09:21:40.946+05:00 DEBUG $ {HOSTNAME} 14100 --- [main] com.redmath.training.Application         : Running with Spring Boot v3.1.2, Spring v6.0.11
+2023-08-24T09:21:40.947+05:00  INFO $ {HOSTNAME} 14100 --- [main] com.redmath.training.Application         : No active profile set, falling back to 1 default profile: "default"
+2023-08-24T09:21:41.716+05:00  INFO $ {HOSTNAME} 14100 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-24T09:21:41.786+05:00  INFO $ {HOSTNAME} 14100 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 1 JPA repository interfaces.
+2023-08-24T09:21:42.560+05:00  INFO $ {HOSTNAME} 14100 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-08-24T09:21:42.572+05:00  INFO $ {HOSTNAME} 14100 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-24T09:21:42.573+05:00  INFO $ {HOSTNAME} 14100 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-24T09:21:42.663+05:00  INFO $ {HOSTNAME} 14100 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-24T09:21:42.664+05:00  INFO $ {HOSTNAME} 14100 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1648 ms
+2023-08-24T09:21:42.708+05:00  INFO $ {HOSTNAME} 14100 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-08-24T09:21:42.972+05:00  INFO $ {HOSTNAME} 14100 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:1059d236-bca1-4e28-b717-4da99b444a29 user=SA
+2023-08-24T09:21:42.974+05:00  INFO $ {HOSTNAME} 14100 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-08-24T09:21:42.998+05:00  INFO $ {HOSTNAME} 14100 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:1059d236-bca1-4e28-b717-4da99b444a29'
+2023-08-24T09:21:43.231+05:00  INFO $ {HOSTNAME} 14100 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-08-24T09:21:43.676+05:00  INFO $ {HOSTNAME} 14100 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-24T09:21:43.680+05:00  INFO $ {HOSTNAME} 14100 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-24T09:21:43.687+05:00  INFO $ {HOSTNAME} 14100 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-24T09:21:43.691+05:00  INFO $ {HOSTNAME} 14100 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-24T09:21:43.697+05:00  INFO $ {HOSTNAME} 14100 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-24T09:21:43.698+05:00  INFO $ {HOSTNAME} 14100 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-08-24T09:21:43.715+05:00  INFO $ {HOSTNAME} 14100 --- [main] liquibase.changelog                      : Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2023-08-24T09:21:43.720+05:00  INFO $ {HOSTNAME} 14100 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-24T09:21:43.721+05:00  INFO $ {HOSTNAME} 14100 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-08-24T09:21:43.725+05:00  INFO $ {HOSTNAME} 14100 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-24T09:21:43.728+05:00  INFO $ {HOSTNAME} 14100 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-24T09:21:43.780+05:00  INFO $ {HOSTNAME} 14100 --- [main] liquibase.changelog                      : Table news created
+2023-08-24T09:21:43.783+05:00  INFO $ {HOSTNAME} 14100 --- [main] liquibase.changelog                      : Primary key added to news (id)
+2023-08-24T09:21:43.788+05:00  INFO $ {HOSTNAME} 14100 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-schema-0.0.1.yaml::schema-0.0.1::news team ran successfully in 11ms
+2023-08-24T09:21:43.793+05:00  INFO $ {HOSTNAME} 14100 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-24T09:21:43.796+05:00  INFO $ {HOSTNAME} 14100 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-24T09:21:43.802+05:00  INFO $ {HOSTNAME} 14100 --- [main] liquibase.changelog                      : New row inserted into news
+2023-08-24T09:21:43.805+05:00  INFO $ {HOSTNAME} 14100 --- [main] liquibase.changelog                      : New row inserted into news
+2023-08-24T09:21:43.807+05:00  INFO $ {HOSTNAME} 14100 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-data-0.0.1.yaml::data-0.0.1::news team ran successfully in 6ms
+2023-08-24T09:21:43.809+05:00  INFO $ {HOSTNAME} 14100 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-24T09:21:43.812+05:00  INFO $ {HOSTNAME} 14100 --- [main] liquibase                                : Update command completed successfully.
+2023-08-24T09:21:43.816+05:00  INFO $ {HOSTNAME} 14100 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-24T09:21:43.818+05:00  INFO $ {HOSTNAME} 14100 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-08-24T09:21:43.917+05:00  INFO $ {HOSTNAME} 14100 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-24T09:21:43.980+05:00  INFO $ {HOSTNAME} 14100 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-24T09:21:43.983+05:00  INFO $ {HOSTNAME} 14100 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-08-24T09:21:44.133+05:00  INFO $ {HOSTNAME} 14100 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-24T09:21:44.294+05:00  INFO $ {HOSTNAME} 14100 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-24T09:21:44.529+05:00  INFO $ {HOSTNAME} 14100 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-24T09:21:45.116+05:00  INFO $ {HOSTNAME} 14100 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-24T09:21:45.119+05:00  INFO $ {HOSTNAME} 14100 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-24T09:21:45.447+05:00  WARN $ {HOSTNAME} 14100 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-24T09:21:45.607+05:00  INFO $ {HOSTNAME} 14100 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-08-24T09:21:45.826+05:00  INFO $ {HOSTNAME} 14100 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-24T09:21:45.844+05:00  INFO $ {HOSTNAME} 14100 --- [main] com.redmath.training.Application         : Started Application in 5.537 seconds (process running for 6.053)
+2023-08-24T09:21:56.940+05:00  INFO $ {HOSTNAME} 14100 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-24T09:21:56.942+05:00  INFO $ {HOSTNAME} 14100 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-08-24T09:21:56.943+05:00  INFO $ {HOSTNAME} 14100 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-08-24T09:25:14.297+05:00  INFO $ {HOSTNAME} 9368 --- [main] com.redmath.training.Application         : Starting Application v0.0.1-SNAPSHOT using Java 20.0.2 with PID 9368 (C:\IntelliJ IDEA Community Edition 2022.1.3\workspace\Lecture03\target\News-0.0.1-SNAPSHOT.jar started by khadija.rauf in C:\IntelliJ IDEA Community Edition 2022.1.3\workspace\Lecture03\target)
+2023-08-24T09:25:14.298+05:00 DEBUG $ {HOSTNAME} 9368 --- [main] com.redmath.training.Application         : Running with Spring Boot v3.1.2, Spring v6.0.11
+2023-08-24T09:25:14.300+05:00  INFO $ {HOSTNAME} 9368 --- [main] com.redmath.training.Application         : No active profile set, falling back to 1 default profile: "default"
+2023-08-24T09:25:14.989+05:00  INFO $ {HOSTNAME} 9368 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-24T09:25:15.055+05:00  INFO $ {HOSTNAME} 9368 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interfaces.
+2023-08-24T09:25:15.692+05:00  INFO $ {HOSTNAME} 9368 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-08-24T09:25:15.702+05:00  INFO $ {HOSTNAME} 9368 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-24T09:25:15.703+05:00  INFO $ {HOSTNAME} 9368 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-24T09:25:15.778+05:00  INFO $ {HOSTNAME} 9368 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-24T09:25:15.779+05:00  INFO $ {HOSTNAME} 9368 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1417 ms
+2023-08-24T09:25:15.810+05:00 ERROR $ {HOSTNAME} 9368 --- [main] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.BeanCreationException. Message: Error creating bean with name 'h2Console' defined in class path resource [org/springframework/boot/autoconfigure/h2/H2ConsoleAutoConfiguration.class]: Failed to instantiate [org.springframework.boot.web.servlet.ServletRegistrationBean]: Factory method 'h2Console' threw exception with message: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: URL must start with 'jdbc'
+2023-08-24T09:25:15.836+05:00  INFO $ {HOSTNAME} 9368 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-08-24T09:25:15.848+05:00  WARN $ {HOSTNAME} 9368 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2023-08-24T09:25:15.858+05:00  INFO $ {HOSTNAME} 9368 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-08-24T09:25:15.880+05:00 ERROR $ {HOSTNAME} 9368 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:164) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:602) ~[spring-context-6.0.11.jar!/:6.0.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	at com.redmath.training.Application.main(Application.java:11) ~[classes!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49) ~[News-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:95) ~[News-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58) ~[News-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65) ~[News-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:142) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:104) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:489) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:211) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:183) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:161) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	... 14 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'h2Console' defined in class path resource [org/springframework/boot/autoconfigure/h2/H2ConsoleAutoConfiguration.class]: Failed to instantiate [org.springframework.boot.web.servlet.ServletRegistrationBean]: Factory method 'h2Console' threw exception with message: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: URL must start with 'jdbc'
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:659) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:647) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:210) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:201) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addServletContextInitializerBeans(ServletContextInitializerBeans.java:96) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:85) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:261) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:235) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:52) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4886) ~[tomcat-embed-core-10.1.11.jar!/:na]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-10.1.11.jar!/:na]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1328) ~[tomcat-embed-core-10.1.11.jar!/:na]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1318) ~[tomcat-embed-core-10.1.11.jar!/:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.11.jar!/:na]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866) ~[tomcat-embed-core-10.1.11.jar!/:na]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:846) ~[tomcat-embed-core-10.1.11.jar!/:na]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-10.1.11.jar!/:na]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1328) ~[tomcat-embed-core-10.1.11.jar!/:na]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1318) ~[tomcat-embed-core-10.1.11.jar!/:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.11.jar!/:na]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866) ~[tomcat-embed-core-10.1.11.jar!/:na]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:241) ~[tomcat-embed-core-10.1.11.jar!/:na]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-10.1.11.jar!/:na]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:428) ~[tomcat-embed-core-10.1.11.jar!/:na]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-10.1.11.jar!/:na]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:918) ~[tomcat-embed-core-10.1.11.jar!/:na]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-10.1.11.jar!/:na]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:485) ~[tomcat-embed-core-10.1.11.jar!/:na]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:123) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	... 19 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.servlet.ServletRegistrationBean]: Factory method 'h2Console' threw exception with message: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: URL must start with 'jdbc'
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	... 59 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: URL must start with 'jdbc'
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:659) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:647) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1640) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1597) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1443) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1375) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.resolveStream(DefaultListableBeanFactory.java:2143) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.orderedStream(DefaultListableBeanFactory.java:2137) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration.logDataSources(H2ConsoleAutoConfiguration.java:86) ~[spring-boot-autoconfigure-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration.lambda$h2Console$0(H2ConsoleAutoConfiguration.java:69) ~[spring-boot-autoconfigure-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration.withThreadContextClassLoader(H2ConsoleAutoConfiguration.java:78) ~[spring-boot-autoconfigure-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration.h2Console(H2ConsoleAutoConfiguration.java:69) ~[spring-boot-autoconfigure-3.1.2.jar!/:3.1.2]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	... 60 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: URL must start with 'jdbc'
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	... 83 common frames omitted
+Caused by: java.lang.IllegalArgumentException: URL must start with 'jdbc'
+	at org.springframework.util.Assert.isTrue(Assert.java:122) ~[spring-core-6.0.11.jar!/:6.0.11]
+	at org.springframework.boot.jdbc.DatabaseDriver.fromJdbcUrl(DatabaseDriver.java:288) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.determineDriverClassName(DataSourceProperties.java:180) ~[spring-boot-autoconfigure-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.autoconfigure.jdbc.PropertiesJdbcConnectionDetails.getDriverClassName(PropertiesJdbcConnectionDetails.java:49) ~[spring-boot-autoconfigure-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:55) ~[spring-boot-autoconfigure-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari.dataSource(DataSourceConfiguration.java:117) ~[spring-boot-autoconfigure-3.1.2.jar!/:3.1.2]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	... 84 common frames omitted
+
+2023-08-24T09:31:26.461+05:00  INFO $ {HOSTNAME} 14772 --- [main] com.redmath.training.Application         : Starting Application v0.0.1-SNAPSHOT using Java 20.0.2 with PID 14772 (C:\IntelliJ IDEA Community Edition 2022.1.3\workspace\Lecture03\target\News-0.0.1-SNAPSHOT.jar started by khadija.rauf in C:\IntelliJ IDEA Community Edition 2022.1.3\workspace\Lecture03\target)
+2023-08-24T09:31:26.463+05:00 DEBUG $ {HOSTNAME} 14772 --- [main] com.redmath.training.Application         : Running with Spring Boot v3.1.2, Spring v6.0.11
+2023-08-24T09:31:26.464+05:00  INFO $ {HOSTNAME} 14772 --- [main] com.redmath.training.Application         : No active profile set, falling back to 1 default profile: "default"
+2023-08-24T09:31:27.119+05:00  INFO $ {HOSTNAME} 14772 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-24T09:31:27.182+05:00  INFO $ {HOSTNAME} 14772 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 1 JPA repository interfaces.
+2023-08-24T09:31:27.817+05:00  INFO $ {HOSTNAME} 14772 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-08-24T09:31:27.839+05:00  INFO $ {HOSTNAME} 14772 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-24T09:31:27.839+05:00  INFO $ {HOSTNAME} 14772 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-24T09:31:27.919+05:00  INFO $ {HOSTNAME} 14772 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-24T09:31:27.920+05:00  INFO $ {HOSTNAME} 14772 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1401 ms
+2023-08-24T09:31:27.938+05:00 ERROR $ {HOSTNAME} 14772 --- [main] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.BeanCreationException. Message: Error creating bean with name 'h2Console' defined in class path resource [org/springframework/boot/autoconfigure/h2/H2ConsoleAutoConfiguration.class]: Failed to instantiate [org.springframework.boot.web.servlet.ServletRegistrationBean]: Factory method 'h2Console' threw exception with message: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: URL must start with 'jdbc'
+2023-08-24T09:31:27.966+05:00  INFO $ {HOSTNAME} 14772 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-08-24T09:31:27.979+05:00  WARN $ {HOSTNAME} 14772 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2023-08-24T09:31:27.988+05:00  INFO $ {HOSTNAME} 14772 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-08-24T09:31:28.009+05:00 ERROR $ {HOSTNAME} 14772 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:164) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:602) ~[spring-context-6.0.11.jar!/:6.0.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	at com.redmath.training.Application.main(Application.java:11) ~[classes!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49) ~[News-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:95) ~[News-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58) ~[News-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65) ~[News-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:142) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:104) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:489) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:211) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:183) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:161) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	... 14 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'h2Console' defined in class path resource [org/springframework/boot/autoconfigure/h2/H2ConsoleAutoConfiguration.class]: Failed to instantiate [org.springframework.boot.web.servlet.ServletRegistrationBean]: Factory method 'h2Console' threw exception with message: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: URL must start with 'jdbc'
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:659) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:647) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:210) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:201) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addServletContextInitializerBeans(ServletContextInitializerBeans.java:96) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:85) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:261) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:235) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:52) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4886) ~[tomcat-embed-core-10.1.11.jar!/:na]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-10.1.11.jar!/:na]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1328) ~[tomcat-embed-core-10.1.11.jar!/:na]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1318) ~[tomcat-embed-core-10.1.11.jar!/:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.11.jar!/:na]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866) ~[tomcat-embed-core-10.1.11.jar!/:na]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:846) ~[tomcat-embed-core-10.1.11.jar!/:na]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-10.1.11.jar!/:na]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1328) ~[tomcat-embed-core-10.1.11.jar!/:na]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1318) ~[tomcat-embed-core-10.1.11.jar!/:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.11.jar!/:na]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866) ~[tomcat-embed-core-10.1.11.jar!/:na]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:241) ~[tomcat-embed-core-10.1.11.jar!/:na]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-10.1.11.jar!/:na]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:428) ~[tomcat-embed-core-10.1.11.jar!/:na]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-10.1.11.jar!/:na]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:918) ~[tomcat-embed-core-10.1.11.jar!/:na]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-10.1.11.jar!/:na]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:485) ~[tomcat-embed-core-10.1.11.jar!/:na]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:123) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	... 19 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.servlet.ServletRegistrationBean]: Factory method 'h2Console' threw exception with message: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: URL must start with 'jdbc'
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	... 59 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: URL must start with 'jdbc'
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:659) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:647) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1640) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1597) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1443) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1375) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.resolveStream(DefaultListableBeanFactory.java:2143) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.orderedStream(DefaultListableBeanFactory.java:2137) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration.logDataSources(H2ConsoleAutoConfiguration.java:86) ~[spring-boot-autoconfigure-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration.lambda$h2Console$0(H2ConsoleAutoConfiguration.java:69) ~[spring-boot-autoconfigure-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration.withThreadContextClassLoader(H2ConsoleAutoConfiguration.java:78) ~[spring-boot-autoconfigure-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration.h2Console(H2ConsoleAutoConfiguration.java:69) ~[spring-boot-autoconfigure-3.1.2.jar!/:3.1.2]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	... 60 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: URL must start with 'jdbc'
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	... 83 common frames omitted
+Caused by: java.lang.IllegalArgumentException: URL must start with 'jdbc'
+	at org.springframework.util.Assert.isTrue(Assert.java:122) ~[spring-core-6.0.11.jar!/:6.0.11]
+	at org.springframework.boot.jdbc.DatabaseDriver.fromJdbcUrl(DatabaseDriver.java:288) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.determineDriverClassName(DataSourceProperties.java:180) ~[spring-boot-autoconfigure-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.autoconfigure.jdbc.PropertiesJdbcConnectionDetails.getDriverClassName(PropertiesJdbcConnectionDetails.java:49) ~[spring-boot-autoconfigure-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:55) ~[spring-boot-autoconfigure-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari.dataSource(DataSourceConfiguration.java:117) ~[spring-boot-autoconfigure-3.1.2.jar!/:3.1.2]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	... 84 common frames omitted
+

@@ -1,0 +1,23 @@
+logging:
+  level:
+    sql: debug
+    '[com.redmath.training]': debug
+  pattern:
+    level: "%5p $ {HOSTNAME}"
+#    console:
+  file:
+    name: target/news.log
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: ${news_db_url}
+    username: ${news_db_user}
+    password: ${news_db_password}
+
+#spring.profiles.include: dev
