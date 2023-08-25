@@ -21,3 +21,11 @@ This repository contains code and materials for learning Spring Boot, including 
 - Loading properties in Spring Boot.
 - Retrieving properties with `env.getProperty()` and `@Value` annotations.
 - Configuring logging properties using `logback-spring.xml`.
+- 
+## Lecture 04: Spring Security and Web Vulnerability Protection
+
+- Spring Security for authentication and authorization.
+- Default user, password, and roles configuration.
+- Custom UserDetailsService for user management.
+- Method-level security with annotations.
+- Protecting against OWASP vulnerabilities: SQL Injection, CSRF, XSS, Log Forging.
