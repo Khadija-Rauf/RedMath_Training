@@ -29,11 +29,15 @@ This repository contains code and materials for learning Spring Boot, including 
 - Custom UserDetailsService for user management.
 - Method-level security with annotations.
 - Protecting against OWASP vulnerabilities: SQL Injection, CSRF, XSS, Log Forging.
-- 
+  
 ## Lecture 05: Code Quality, Testing, API Docs, System Testing, Production Considerations
-
 - **Static Code Quality:** Checkstyle, PMD, FindBugs.
 - **Unit Testing:** JUnit, Spring Boot Starter Test.
 - **API Documentation:** Swagger.
 - **System Testing:** BDD, Cucumber-JVM.
 - **Production:** Monitoring, Actuator.
+  
+## Lecture 06: HTML for Structure, CSS for Style, JavaScript for Interactivity
+- **HTML:** Learn about structuring web content with HTML elements.
+- **CSS:** Style elements by element type, class, or element ID.
+- **JavaScript:** Interact with elements by their unique element ID.
