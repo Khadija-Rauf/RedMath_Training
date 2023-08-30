@@ -41,3 +41,9 @@ This repository contains code and materials for learning Spring Boot, including 
 - **HTML:** Learn about structuring web content with HTML elements.
 - **CSS:** Style elements by element type, class, or element ID.
 - **JavaScript:** Interact with elements by their unique element ID.
+  
+## Lecture 07: AngularJS: MVVM, Services, Controllers, One-Way Binding
+- **MVVM Architecture**: AngularJS follows MVVM for clear separation of concerns.
+- **Services**: Reusable components for data handling.
+- **Controllers**: Control data flow and UI interactions.
+- **One-Way Data Binding**: Automatic UI updates when data changes.
