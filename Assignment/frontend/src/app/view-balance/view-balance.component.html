@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="row align-items-center">
+    <div class="col-md-6">
+      <div class="mb-3">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="">
+          <div class="table-responsive">
+            <table class="table project-list-table table-nowrap align-middle table-borderless">
+              <thead>
+              <tr>
+                <th scope="col" class="ps-4" style="width: 50px;">
+                  <div class="form-check font-size-16"><input type="checkbox" class="form-check-input" id="accountcheck" /><label class="form-check-label" for="accountcheck"></label></div>
+                </th>
+                <th scope="col">Balance Id</th>
+                <th scope="col">Date</th>
+                <th scope="col">Amount</th>
+                <th scope="col">Indicator</th>
+              </tr>
+              </thead>
+              <tbody>
+              <ng-container *ngIf="balance; else noBalance">
+                <tr>
+                  <th scope="row" class="ps-4">
+                    <div class="form-check font-size-16"><input type="checkbox" class="form-check-input" id="accountcheck1" /><label class="form-check-label" for="accountcheck1"></label></div>
+                  </th>
+                  <td>{{ balance.id }}</td>
+                  <td>{{ balance.date }}</td>
+                  <td>{{ balance.amount }}</td>
+                  <td span class="badge bg-info text-white">{{ balance.indicator }}</td>
+                </tr>
+              </ng-container>
+              <ng-template #noBalance>
+                <tr>
+                  <td colspan="5">
+                    <p class="no-transactions-message" >No balance available!</p>
+                  </td>
+                </tr>
+              </ng-template>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

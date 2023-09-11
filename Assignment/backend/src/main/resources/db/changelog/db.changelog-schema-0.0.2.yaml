@@ -1,0 +1,43 @@
+databaseChangeLog:
+  - changeSet:
+      id: schema-0.0.1
+      author: bank team
+      changes:
+        # Balance Table
+        - createTable:
+            tableName: balance
+            columns:
+              - column:
+                  name: balance_id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+              - column:
+                  name: Date
+                  type: DATE
+              - column:
+                  name: Amount
+                  type: double
+              - column:
+                  name: Indicator
+                  type: varchar(255)
+              - column:
+                  name: account_id
+                  type: bigint
+        - addPrimaryKey:
+            tableName: balance
+            columnNames: balance_id
+            constraintName: balance_pk
+        - addForeignKeyConstraint:
+            baseTableName: balance
+            baseColumnNames: account_id
+            referencedTableName: account
+            referencedColumnNames: id
+            constraintName: balance_fk
+        - createIndex:
+            tableName: balance
+            indexName: balance_ix_01
+            columns:
+              - column:
+                  name: account_id

@@ -1,0 +1,46 @@
+databaseChangeLog:
+  - changeSet:
+      id: schema-0.0.1
+      author: bank team
+      changes:
+       # Transaction Table
+        - createTable:
+            tableName: transaction
+            columns:
+              - column:
+                  name: transaction_id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+              - column:
+                  name: Date
+                  type: DATE
+              - column:
+                  name: Description
+                  type: varchar(1000)
+              - column:
+                  name: Amount
+                  type: double
+              - column:
+                  name: Indicator
+                  type: varchar(255)
+              - column:
+                  name: account_id
+                  type: bigint
+        - addPrimaryKey:
+            tableName: transaction
+            columnNames: transaction_id
+            constraintName: transaction_pk
+        - addForeignKeyConstraint:
+            baseTableName: transaction
+            baseColumnNames: account_id
+            referencedTableName: account
+            referencedColumnNames: id
+            constraintName: transaction_fk
+        - createIndex:
+            tableName: transaction
+            indexName: transaction_ix_01
+            columns:
+              - column:
+                  name: account_id

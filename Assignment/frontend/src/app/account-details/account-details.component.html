@@ -1,0 +1,46 @@
+<section class="vh-100" style="background-color: #f4f5f7;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col col-lg-10 mb-4 mb-lg-0">
+        <div class="card mb-3" style="border-radius: .5rem;">
+          <div class="row g-0">
+            <div class="col-md-4 gradient-custom text-center text-white"
+                 style="border-top-left-radius: .5rem; border-bottom-left-radius: .5rem;" *ngIf="isSameAccount || isAdmin;">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
+                   alt="Avatar" class="img-fluid my-5" style="width: 190px;" />
+              <h5>{{ account.name }}</h5>
+              <div class="col-12 mb-5" style="margin-top:1cm;">
+                <h5>{{ account.email }}</h5>
+                <h5>{{ account.address }}</h5>
+              </div>
+              <i class="far fa-edit mb-5"></i>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body p-4">
+                <hr class="mt-0 mb-4">
+                <div *ngIf="isSameAccount || isAdmin; else noAccess">
+                  <p style="color: #749b64;font-size: 35px; text-transform: uppercase;"><strong>BALANCE:</strong>  {{ balance.amount | currency:'':'symbol-narrow':'1.2-2' }}</p>
+                  <br>
+                  <p style="font-size: 25px;">Last Updated: {{ balance.date | date:'yyyy-MM-dd' }}</p><br>
+                  <p style="font-size: 25px;">Transaction Type: {{ balance.indicator === "1" ? 'Debit' : 'Credit' }}</p>
+                  <div class="row pt-1">
+                    <div class="col-6 mb-3">
+                      <button class="btn btn-primary" (click)="getTransactionList(account.id) "style="background-color: #749b64; border-color: #749b64 ;  margin-top:2.2cm;height:1.8cm;">Transaction History</button>
+                    </div>
+
+                    <div class="col-6 mb-3">
+                      <button class="btn btn-primary" (click)="createTransaction(account.id)"style="background-color: #749b64;  border-color: #749b64 ; margin-top:2.2cm; margin-left:2cm; height:1.8cm;">Create Transaction</button>
+                    </div>
+                  </div>
+                </div>
+                <ng-template #noAccess>
+                  <p class="text-danger">You do not have access to this account's details.</p>
+                </ng-template>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

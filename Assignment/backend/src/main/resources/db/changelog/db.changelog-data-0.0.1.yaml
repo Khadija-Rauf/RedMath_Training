@@ -1,0 +1,60 @@
+databaseChangeLog:
+  - changeSet:
+      id: data-0.0.1
+      author: bank team
+      changes:
+#        Account Table
+        - insert:
+            tableName: account
+            columns:
+              - column:
+                  name: name
+                  value: Aila
+              - column:
+                  name: password
+                  value: '{noop}Aila'
+              - column:
+                  name: email
+                  value: ailanoah81@gmail.com
+              - column:
+                  name: address
+                  value: Sydney, Australia
+              - column:
+                  name: Role
+                  value: USER
+        - insert:
+            tableName: account
+            columns:
+              - column:
+                  name: Name
+                  value: Admin
+              - column:
+                  name: Password
+                  value: '{noop}Admin'
+              - column:
+                  name: Email
+                  value: adanfiaz111@gmail.com
+              - column:
+                  name: Address
+                  value: Coventry, Central England
+              - column:
+                  name: Role
+                  value: ADMIN
+        - insert:
+            tableName: account
+            columns:
+              - column:
+                  name: Name
+                  value: John
+              - column:
+                  name: Password
+                  value: '{noop}John'
+              - column:
+                  name: Email
+                  value: Johndoe21@gmail.com
+              - column:
+                  name: Address
+                  value: Bay Area,San Francisco,CA
+              - column:
+                  name: Role
+                  value: USER

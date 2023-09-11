@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<nav class="navbar navbar-expand-lg" style="background-color: #749b64">
+  <div class="container">
+      <a class="navbar-brand text-white" href="accounts" routerLinkActive="active"><i class="bx bx-home"></i></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a href="javascript:void(0);" class="nav-link text-white">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="javascript:void(0);" class="nav-link text-white">Services</a>
+        </li>
+        <li class="nav-item">
+          <a href="javascript:void(0);" class="nav-link text-white">Contact Us</a>
+        </li>
+<!--        *ngIf="myAccount.role !== 'ADMIN'"-->
+        <li class="nav-item" >
+          <a routerLink="create-account" routerLinkActive="active" class="nav-link text-white">Create Account</a>
+        </li>
+        <li class="nav-item">
+          <a [routerLink]="['/account-details', myAccount.id]" routerLinkActive="active" class="nav-link text-white">{{ myAccount.name }}</a>
+        </li>
+	      <li class="nav-item">
+          <a routerLink="logout" routerLinkActive="active" class="nav-link text-white">LogOut</a>
+         </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

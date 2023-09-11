@@ -1,0 +1,35 @@
+<div class="form-body">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <div class="card mb-3" style="border-radius: .5rem;">
+        <div class="card-body p-4">
+          <h3 class="mb-4">Create Transaction</h3>
+          <div *ngIf="errorMessage" class="alert alert-danger">{{ errorMessage }}</div>
+          <form (ngSubmit)="onSubmit(myForm)" class="sky-blue-form" #myForm="ngForm">
+            <div class="mb-3">
+              <label for="description" class="form-label">Description</label>
+              <input type="text" class="form-control" id="password" [(ngModel)]="transaction.description" name="description">
+            </div>
+
+            <div class="mb-3">
+              <label for="Amount" class="form-label">Amount</label>
+              <input type="number" class="form-control" id="email" [(ngModel)]="transaction.amount" name="amount" required>
+              <div *ngIf="myForm.submitted && myForm.controls['amount'].errors?.['required']" class="text-danger">
+                Amount is required.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="indicator" class="form-label">Indicator(Enter 1 for Credit, 0 for Debit)</label>
+              <input type="text" class="form-control" id="address" [(ngModel)]="transaction.indicator" name="indicator" required>
+              <div *ngIf="myForm.submitted && myForm.controls['indicator'].errors?.['required']" class="text-danger">
+                Indicator is required.
+              </div>
+            </div>
+            <input type="submit" value="Create" class="btn btn-success">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+
+  .sky-blue-form {
+    background:#749b64;
+    padding: 20px;
+    border-radius: 0.5rem;
+  }
+
+  .sky-blue-form h3 {
+    color: #333;
+  }
+
+  .sky-blue-form label {
+    color: #333; /* Label text color */
+  }
+
+  .sky-blue-form .btn-success {
+    background-color: #749b64 ; /* Button background color */
+    border-color: #749b64 ; /* Button border color */
+  }
+
+  .sky-blue-form .btn-success:hover {
+    background-color: white; /* Hover background color */
+    border-color: white; /* Hover border color */
+    color:black;
+  }
+
+

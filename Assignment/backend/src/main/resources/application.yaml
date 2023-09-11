@@ -1,0 +1,31 @@
+logging:
+  level:
+    sql: debug
+
+spring:
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: none
+  datasource:
+    url: ${account.db.url}
+    username: ${account.db.username}
+    password: ${account.db.password}
+  liquibase:
+      contexts: ${account.liquibase.contexts:}
+  h2:
+    console:
+      enabled: true
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: when-authorized
+
+spring.profiles.include: local

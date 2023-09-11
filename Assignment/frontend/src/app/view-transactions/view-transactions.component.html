@@ -1,0 +1,58 @@
+<div class="container">
+  <div class="row align-items-center">
+    <div class="col-md-6">
+      <div class="mb-3">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="">
+          <div class="table-responsive" *ngIf="transactions && transactions.length > 0">
+            <table class="table project-list-table table-nowrap align-middle table-borderless">
+              <thead>
+              <tr>
+                <th scope="col" class="ps-4" style="width: 50px;">
+                  <div class="form-check font-size-16">
+                    <input type="checkbox" class="form-check-input" id="accountcheck" />
+                    <label class="form-check-label" for="accountcheck"></label>
+                  </div>
+                </th>
+                <th scope="col">Transaction Id</th>
+                <th scope="col">Date</th>
+                <th scope="col">Description</th>
+                <th scope="col">Amount</th>
+                <th scope="col">Indicator</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr *ngFor="let transaction of transactions">
+                <th scope="row" class="ps-4">
+                  <div class="form-check font-size-16">
+                    <input type="checkbox" class="form-check-input" id="accountcheck1" />
+                    <label class="form-check-label" for="accountcheck1"></label>
+                  </div>
+                </th>
+                <td>{{ transaction.id }}</td>
+                <td>{{ transaction.date }}</td>
+                <td>{{ transaction.description }}</td>
+                <td>{{ transaction.amount }}</td>
+                <td span class="badge bg-info text-white">{{ transaction.indicator }}</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="">
+                  <div class="table-responsive" *ngIf="transactions && transactions.length > 0">
+                    <table class="table project-list-table table-nowrap align-middle table-borderless">
+                    </table>
+                  </div>
+                  <div class="text-center" *ngIf="!transactions || transactions.length === 0">
+                    <p class="no-transactions-message">No transactions!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row g-0 align-items-center pb-4"></div>
+          </div>
