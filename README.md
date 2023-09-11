@@ -1,4 +1,4 @@
-# RedMath_Training
+# SpringBoot_Training
 # Spring Boot Learning
 
 This repository contains code and materials for learning Spring Boot, including the Spring Starter Web, Spring Data JPA, and Git for version control.
