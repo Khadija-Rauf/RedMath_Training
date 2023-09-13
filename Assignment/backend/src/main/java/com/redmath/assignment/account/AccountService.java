@@ -2,8 +2,14 @@ package com.redmath.assignment.account;
 
 import com.redmath.assignment.balance.Balance;
 import com.redmath.assignment.balance.BalanceService;
+import org.springframework.cache.annotation.Cacheable;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationListener;
+import org.springframework.security.authentication.event.AbstractAuthenticationEvent;
+import org.springframework.security.authentication.event.AbstractAuthenticationFailureEvent;
+import org.springframework.security.authentication.event.AuthenticationSuccessEvent;
+import org.springframework.security.authentication.event.InteractiveAuthenticationSuccessEvent;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -17,7 +23,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class AccountService implements UserDetailsService {
+public class AccountService implements UserDetailsService, ApplicationListener<AbstractAuthenticationEvent> {
     private final AccountRepository accountRepository;
     private final BalanceService balanceService;
     @Autowired
@@ -75,15 +81,18 @@ public class AccountService implements UserDetailsService {
         return true;
     }
     //for security
+    @Cacheable("account")
+    public UserDetails loadUserByUsername(String jti, String userName) throws UsernameNotFoundException {
+        return loadUserByUsername(userName);
+    }
     @Override
     public UserDetails loadUserByUsername(String userName) throws UsernameNotFoundException{
         Account account = accountRepository.findByName(userName);
         if(account == null){
             throw new UsernameNotFoundException("Invalid user: "+ userName);
         }
-        System.out.println(account.getName());
-        return new org.springframework.security.core.userdetails.User(account.getName(), account.getPassword(),
-                true, true,true,true, AuthorityUtils.commaSeparatedStringToAuthorityList(account.getRole()));
+        return new org.springframework.security.core.userdetails.User(account.getName(), account.getPassword(), true,
+                true, true, true, AuthorityUtils.commaSeparatedStringToAuthorityList(account.getRole()));
     }
     //for account-holder
     @Transactional
@@ -95,5 +104,17 @@ public class AccountService implements UserDetailsService {
     @Transactional
     public Account findByUserName(String name) {
         return accountRepository.findByName(name);
+    }
+    @Override
+    public void onApplicationEvent(AbstractAuthenticationEvent event) {
+        if (event instanceof AuthenticationSuccessEvent success) {
+            System.out.println("security authentication successful for user:"+ success.getAuthentication().getName());
+        } else if (event instanceof InteractiveAuthenticationSuccessEvent success) {
+            System.out.println("security login successful for user: "+ success.getAuthentication().getName());
+        } else if (event instanceof AbstractAuthenticationFailureEvent failure) {
+            System.out.println("security authentication failed for user" + failure.getAuthentication().getName()+ "reason:" + String.valueOf(failure.getException()));
+        } else {
+            System.out.println("securityauthentication event for user:" + event.getAuthentication().getName()+ event);
+        }
     }
 }
