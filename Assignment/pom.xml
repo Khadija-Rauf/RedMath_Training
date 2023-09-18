@@ -10,5 +10,6 @@
     <modules>
         <module>backend</module>
         <module>frontend</module>
+	<module>testing</module>
     </modules>
 </project>
